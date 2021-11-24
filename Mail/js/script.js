@@ -6,7 +6,7 @@ const mail = prompt('Inserisci la tua email');
 const registeredMail = ["ciao@italia.it" , "rosso@rosso.it" , "carmelo@melo.it"];
 for (let index=0; index < 3; index++ ){
     if(mail == registeredMail[index]){
-        console.log('Login effettuato corretamente');
+        document.getElementById('esito').innerHTML = "Acesso effettuato";
     }
-    else console.log('Email non registrata');
+    else document.getElementById('esito').innerHTML = "Mail non registrata";
 }
