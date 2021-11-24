@@ -14,7 +14,12 @@ const number2 = parseInt(random[1]);
 document.getElementById('number1').innerHTML = number1;
 document.getElementById('number2').innerHTML = number2;
 
-if ( number1 > number2) {
-
+if ( number1 == number2) {
+    document.getElementById('esito').innerHTML = "Pareggio";
 }
-console.log(random);
+else if (number1 > number2) {
+    document.getElementById('esito').innerHTML = "Hai vinto";
+}
+else document.getElementById('esito').innerHTML = "Hai perso";
+
+
