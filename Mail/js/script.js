@@ -4,7 +4,7 @@
 
 const mail = prompt('Inserisci la tua email');
 const registeredMail = ["ciao@italia.it" , "rosso@rosso.it" , "carmelo@melo.it"];
-for (let index=0; index < 3; index++ ){
+for (let index=0; index < registeredMail.length; index++ ){
     if(mail == registeredMail[index]){
         document.getElementById('esito').innerHTML = "Acesso effettuato";
     }
