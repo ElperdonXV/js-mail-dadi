@@ -2,8 +2,19 @@
 //Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 const random = [];
-for (i=0; i<2; i++){
-    random.push(Math.floor(Math.random() * (6 - 1 + 1)));
+const min = 1;
+const max = 7;
+for (let i=0; i<2; i++){
+    random.push(Math.floor(Math.random() * (max - min) + min));
 }
 
+const number1 = parseInt(random[0]);
+const number2 = parseInt(random[1]);
+
+document.getElementById('number1').innerHTML = number1;
+document.getElementById('number2').innerHTML = number2;
+
+if ( number1 > number2) {
+
+}
 console.log(random);
